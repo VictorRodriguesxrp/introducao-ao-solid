@@ -27,7 +27,7 @@ $ npm run dev
 |route|HTTP Method|params|description
 |:---|:---:|:---:|:---:
 |`/users`|POST|Body with user `name` and `email`.|Create a new user, multiple users with same e-mail can't be created.
-|`//users/:user_id/admin`|PATCH| `id` in the route params |Turns the user with given id in a Admin User.
+|`/users/:user_id/admin`|PATCH| `id` in the route params |Turns the user with given id in a Admin User.
 |`/users/:user_id`|GET|`Id` send in route params.|List a user profile, the user and it's propertys.
 |`/users`|GET|You must send `id` in the headers.| It will list all users in project, but only if the user who are sending the request (by the id in the header) is a Admin. 
 
